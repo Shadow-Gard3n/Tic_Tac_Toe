@@ -37,10 +37,11 @@ public class tic_tac_toe {
             if (z==2 || z==1 || a==1){
                 break;    
             }
+            handling_input.remove(Integer.valueOf(choice));
             System.out.println();
             System.out.print("Choose Player 2 for \"O\": ");
             int choice2 = input.nextInt();
-            if (choice>9 || choice<1 || !handling_input.contains(choice)){
+            if (choice2>9 || choice2<1 || !handling_input.contains(choice2)){
                 System.out.println("!! Wrong Input !!");
                 System.exit(1);
             }
@@ -50,7 +51,7 @@ public class tic_tac_toe {
             if (z==2 || z==1){
                 break;
             }
-            handling_input.remove(Integer.valueOf(choice));
+            handling_input.remove(Integer.valueOf(choice2));
             a--;
         }
         System.out.println();
