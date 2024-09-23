@@ -62,7 +62,7 @@ public class tic_tac_toe {
             System.out.println("------PLAYER 1 WINS------");
         }
         else if (z==1){
-            System.out.println("------PLAYER 2 wins------");
+            System.out.println("------PLAYER 2 WINS------");
         }
         input.close();
     }
